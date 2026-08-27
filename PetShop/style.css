@@ -1,3 +1,76 @@
 :root{
-    
+    --cor-principal: #FBA81F;
+    --cor-secundaria: #E46721;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    background-color: ;
+}
+
+li{
+    list-style-type: none;
+}
+
+.nome-logo{
+    display: flex;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+img{
+    width: 15px;
+    height: 15px;
+    margin-left: 2rem;
+    margin-right: 10px;
+}
+
+.home-cadastro{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.home, .cadastro{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.home, .cadastro:hover{
+    border: 2px solid var(--cor-secundaria);
+}
+
+input{
+    margin-right: 5rem;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+}
+
+/* FAIXA - MENU */
+
+.parte-um{
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.boas-vindas{
+    font-size: 50px;
+}
+
+span{
+    color: var(--cor-secundaria);
 }

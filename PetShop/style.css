@@ -1,18 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 :root{
     --cor-principal: #FBA81F;
     --cor-secundaria: #E46721;
+    --fonte-principal: 'Lexend', sans-serif;
 }
 
 *{
     margin: 0;
     padding: 0;
+    font-family: var(--fonte-principal);
 }
 
 .menu{
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
-    background-color: ;
+   /* background-color: ; */
 }
 
 li{
@@ -22,7 +26,7 @@ li{
 .nome-logo{
     display: flex;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--fonte-principal);
     font-size: 18px;
 }
 
@@ -45,7 +49,7 @@ img{
     border-radius: 10px;
     text-decoration: none;
     color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--fonte-principal);
 }
 
 .home, .cadastro:hover{
@@ -62,19 +66,38 @@ input{
 
 /* FAIXA - MENU */
 
-.parte-um{
+.parte-um {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%;                   
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px;
     margin-top: 3rem;
-    margin-left: 3rem;
-    margin-bottom: 3rem;
-    gap: 20px;
 }
 
 .boas-vindas{
-    font-size: 50px;
+    flex: 1;                      
+    max-width: 450px;
+    font-size: 56px;
+}
+
+.image-home {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;   
+}
+
+.image-home img {
+    width: 100%;
+    max-width: 380px;            
+    height: auto;
 }
 
 span{
     color: var(--cor-secundaria);
+    font-weight: 800;
 }
 
 button{
@@ -82,15 +105,26 @@ button{
     padding: 10px;
     border-radius: 10px;
     border: 1px solid var(--cor-principal);
-    background-color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
     width: 150px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--fonte-principal);
     font-size: 15px;
+    font-weight: 800;
+    color: #ffff;
 }
 
-.imagem-cachorros{
-    display: flex;
-    flex: 1;
-    width: 300px;
-    height: 250px;
+button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button:hover{
+    background-color: #ffff;
+    color: black;
+}
+
+/* PARTE DOIS */
+
+.parte-dois{
+    background-color: #F8F9FA;
 }

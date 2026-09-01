@@ -10,13 +10,13 @@
     margin: 0;
     padding: 0;
     font-family: var(--fonte-principal);
+    scroll-behavior: smooth;
 }
 
 .menu{
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
-   /* background-color: ; */
 }
 
 li{
@@ -50,6 +50,8 @@ img{
     text-decoration: none;
     color: black;
     font-family: var(--fonte-principal);
+    transition: all 0.3s ease;
+
 }
 
 .home, .cadastro:hover{
@@ -111,6 +113,8 @@ button{
     font-size: 15px;
     font-weight: 800;
     color: #ffff;
+    transition: all 0.3s ease;
+
 }
 
 button a{
@@ -127,4 +131,20 @@ button:hover{
 
 .parte-dois{
     background-color: #F8F9FA;
+}
+
+.sobre-nos{
+    font-size: 20px;
+    margin-left: 12rem;
+}
+
+.sobre-nos-texto{
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%;                   
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px;
+    margin-top: 1.5rem;
 }

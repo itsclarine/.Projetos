@@ -109,7 +109,7 @@ h3{
     text-align: center;
     flex-direction: row;
     gap: 20px;
-    margin-left: 6rem;
+    margin-left: 7rem;
 }
 
 .day-card{
@@ -118,7 +118,7 @@ h3{
 }
 
 .day-name{
-    
+    margin-bottom: 14px;
 }
 
 .grade-semanal:hover{

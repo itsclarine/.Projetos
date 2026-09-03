@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Reserva de Carrinhos</title>
+</head>
+<body>
+
+  <h2>SISTEMA DE RESERVA DE CARRINHOS</h2>
+
+  <label for="data">data</label> <br>
+  <input type="date" id="data">
+  <br><br>
+
+  <label for="sala">sala</label> <br>
+  <select id="sala" disabled>
+    <option value="">Selecione a sala</option>
+    <option value="101">Sala 101</option>
+    <option value="102">Sala 102</option>
+  </select>
+  <br><br>
+
+  <label for="horario">horário</label> <br>
+  <select id="horario" disabled>
+    <option value="">Selecione o horário</option>
+    <option value="08:00">08:00</option>
+    <option value="10:00">10:00</option>
+  </select>
+  <br><br>
+
+  <label for="carrinho">carrinho</label> <br>
+  <select id="carrinho" disabled>
+    <option value="">Selecione o carrinho</option>
+    <option value="A">Carrinho A</option>
+    <option value="B">Carrinho B</option>
+  </select>
+
+  <script>
+    const campoData = document.getElementById('data');
+    const campoSala = document.getElementById('sala');
+    const campoHorario = document.getElementById('horario');
+    const campoCarrinho = document.getElementById('carrinho');
+
+    campoData.addEventListener('change', function() {
+      campoSala.disabled = false;
+    });
+
+    campoSala.addEventListener('change', function() {
+      campoHorario.disabled = false;
+    });
+
+    campoHorario.addEventListener('change', function() {
+      campoCarrinho.disabled = false;
+    });
+  </script>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

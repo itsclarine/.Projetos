@@ -157,6 +157,30 @@ span{
     color: var(--slate-500);
 }
 
+.numeros{
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+
+    font-size: 19px;
+    font-weight: 800;
+    font-family: var(--font-display);
+    color: var(--slate-500);
+    margin-top: 3rem;
+    list-style-type: none;
+}
+
+.sub{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+
+    font-size: 18px;
+    font-family: var(--font-display);
+    color: var(--slate-500);
+    list-style-type: none;
+}
+
 .card-principal{
     position: relative;
 }

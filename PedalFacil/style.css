@@ -17,6 +17,7 @@
   --font-body: 'Inter', sans-serif;
 }
 
+
 /* NAV  */
 
 nav{
@@ -90,5 +91,32 @@ span{
 .parte-um{
     display: flex;
 
+    margin-top: 2rem;
     margin-left: 2rem;
+}
+
+
+.p-um{
+    font-size: 10px;
+    font-family: var(--font-body);
+    color: var(--green-dark);
+}
+
+.titulo-um{
+    font-size: 60px;
+    font-family: var(--font-body);
+
+    margin-top: 0;
+}
+
+.texto-um{
+    font-family: var(--font-body);
+    color: var(--slate-500);
+}
+
+.botao-um, .botao-dois{
+    border: 1px solid var(--green);
+    background-color: var(--green); 
+    border-radius: 20px;
+    padding: 10px;
 }

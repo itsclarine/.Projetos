@@ -83,3 +83,12 @@ span{
 .botao:hover{
      transform: scale(1.03);
 }
+
+
+/* PARTE UM  */
+
+.parte-um{
+    display: flex;
+
+    margin-left: 2rem;
+}

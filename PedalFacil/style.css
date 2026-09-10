@@ -156,3 +156,37 @@ span{
     font-family: var(--font-display);
     color: var(--slate-500);
 }
+
+.card-principal{
+    position: relative;
+}
+
+.img-card{
+    width: 18px;
+    margin-right: 5px;
+}
+
+.card-reserva{
+    color: var(--slate-500);
+}
+
+.card-flutuante{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    gap: 20px;
+
+    font-family: var(--font-display);
+    left: -30px;
+    bottom: -20px;
+    background: var(--white);
+    padding: 50px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.status{
+    display: flex;
+    flex-direction: row;
+}

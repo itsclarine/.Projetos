@@ -59,6 +59,9 @@ span{
     color: var(--slate-500);
 }
 
+.link-menu:hover{
+    color: var(--slate-400);
+}
 
 .botao{
     padding: 6px;
@@ -68,10 +71,15 @@ span{
     border-radius: 15px;
 
     background-color: var(--green);
+    transition: transform 0.3s ease; 
 
 }
 
 .botao, a{
     color: var(--bg);
     text-decoration: none;
+}
+
+.botao:hover{
+     transform: scale(1.03);
 }

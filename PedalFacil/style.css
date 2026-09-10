@@ -1,3 +1,5 @@
+
+
 :root{
   --green: #16a34a;
   --green-dark: #15803d;
@@ -13,4 +15,63 @@
   --bg: #f8fafc;
   --font-display: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
+}
+
+/* NAV  */
+
+nav{
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--slate-200);
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+
+    font-size: 20px;
+    font-family: var(--font-display);
+
+}
+
+.nome{
+    font-weight: 800;
+}
+
+svg{
+    color: var(--green);
+}
+
+span{
+    color: var(--green);
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.link-menu{
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--slate-500);
+}
+
+
+.botao{
+    padding: 6px;
+    height: 30px;
+    width: 75px;
+    border: 1px solid var(--green);
+    border-radius: 15px;
+
+    background-color: var(--green);
+
+}
+
+.botao, a{
+    color: var(--bg);
+    text-decoration: none;
 }

@@ -1,5 +1,3 @@
-
-
 :root{
   --green: #16a34a;
   --green-dark: #15803d;
@@ -17,10 +15,15 @@
   --font-body: 'Inter', sans-serif;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
 
 /* NAV  */
 
 nav{
+    padding: 15px;
     margin-bottom: 20px;
     border-bottom: 1px solid var(--slate-200);
 }
@@ -37,6 +40,7 @@ nav{
 }
 
 .nome{
+    margin-left: 10px;
     font-weight: 800;
 }
 
@@ -92,11 +96,13 @@ span{
 
 .parte-um{
     display: grid;
+    position: relative;
+    padding-bottom: 10rem;
     grid-template-columns: repeat(2, 1fr);
-
     margin-top: 4rem;
     margin-left: 5rem;
-    margin-bottom: 10rem;
+
+    background-color: var(--white);
 }
 
 
@@ -228,6 +234,15 @@ span{
 .titulo-dois{
     display: flex;
     justify-content: center;
+    padding: 10px;
 
+
+    font-size: 23px;
+    color: var(--slate-900);
     font-family: var(--font-display);
 }
+
+.como-dois{
+    margin-top: 5rem;
+}
+

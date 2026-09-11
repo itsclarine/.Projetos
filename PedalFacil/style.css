@@ -96,6 +96,7 @@ span{
 
     margin-top: 4rem;
     margin-left: 5rem;
+    margin-bottom: 10rem;
 }
 
 
@@ -213,4 +214,20 @@ span{
 .status{
     display: flex;
     flex-direction: row;
+}
+
+
+/* PARTE DOIS */
+
+.parte-dois{
+    width: 100%;
+    height: auto;
+    background-color: var(--slate-200);
+}
+
+.titulo-dois{
+    display: flex;
+    justify-content: center;
+
+    font-family: var(--font-display);
 }

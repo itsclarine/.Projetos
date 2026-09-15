@@ -44,6 +44,11 @@ nav{
     font-weight: 800;
 }
 
+.facil{
+    color: var(--green);
+    margin: 0;
+}
+
 svg{
     color: var(--green);
 }
@@ -130,7 +135,10 @@ span{
     margin-top: 0;
 }
 
-
+.liberdade{
+    color: var(--green);
+    margin: 0;
+}
 
 .texto-um{
     font-size: 20px;
@@ -214,7 +222,8 @@ span{
     left: -30px;
     bottom: -20px;
     background: var(--white);
-    padding: 50px 25px;
+    height: 150px;
+    width: 280px;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }

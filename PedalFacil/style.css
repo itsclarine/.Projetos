@@ -130,6 +130,8 @@ span{
     margin-top: 0;
 }
 
+
+
 .texto-um{
     font-size: 20px;
     font-family: var(--font-display);
@@ -228,6 +230,8 @@ span{
 .parte-dois{
     width: 100%;
     height: auto;
+    margin-bottom: 5rem;
+
     background-color: var(--slate-200);
 }
 
@@ -244,5 +248,67 @@ span{
 
 .como-dois{
     margin-top: 5rem;
+    margin-bottom: 3rem;
 }
 
+.cards-passos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+    font-family: var(--font-display);
+}
+
+
+.card-passo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid var(--white);
+    border-radius: 15px;
+    margin-left: 3rem;
+    margin-bottom: 4rem;
+    height: 200px;
+
+
+    background-color: var(--white);
+    transition: transform 0.8s ease; 
+}
+
+.card-passo, span, h4, p{
+    margin-left: 3rem;
+}
+
+.card-passo:hover{
+    transform: scale(1.03);
+}
+
+.lista-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+
+    list-style-type: none;
+}
+
+.lista-card, span, h4, p{
+    margin: 20px;
+}
+
+.numero{
+    margin-top: 2rem;
+    font-weight: 800;
+    color: var(--green);
+}
+
+.numero-span{
+    font-size: 70px;
+    margin-bottom: 4rem;
+}
+
+.numero-span, span{
+    font-weight: 800;
+    color: var(--green-light);
+}

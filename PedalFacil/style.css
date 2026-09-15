@@ -40,7 +40,7 @@ nav{
 }
 
 .nome{
-    margin-left: 10px;
+    margin-left: 20px;
     font-weight: 800;
 }
 
@@ -144,6 +144,7 @@ span{
     font-size: 20px;
     font-family: var(--font-display);
     color: var(--slate-500);
+    margin: 0;
 }
 
 .botao-um{
@@ -203,12 +204,14 @@ span{
 }
 
 .img-card{
-    width: 18px;
-    margin-right: 5px;
+    width: 28px;
+    margin-right: -10px;
 }
 
 .card-reserva{
     color: var(--slate-500);
+    margin-bottom: -5px;
+    font-size: 15px;
 }
 
 .card-flutuante{
@@ -216,7 +219,7 @@ span{
     flex-direction: column;
     align-items: center;
     position: absolute;
-    gap: 20px;
+    gap: 8px;
 
     font-family: var(--font-display);
     left: -30px;
@@ -231,6 +234,8 @@ span{
 .status{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-left: -13px;
 }
 
 
@@ -239,8 +244,7 @@ span{
 .parte-dois{
     width: 100%;
     height: auto;
-    margin-bottom: 5rem;
-
+    
     background-color: var(--slate-200);
 }
 
@@ -277,7 +281,7 @@ span{
     border: 1px solid var(--white);
     border-radius: 15px;
     margin-left: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 12rem;
     height: 200px;
 
 
@@ -320,4 +324,66 @@ span{
 .numero-span, span{
     font-weight: 800;
     color: var(--green-light);
+}
+
+
+/* PARTE TRÊS */
+
+.parte-tres{
+    margin-top: 5rem;
+    background-color: var(--white);
+}
+
+.lista-tres{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-top: 8rem;
+    list-style-type: none;
+
+    font-weight: 800;
+    font-family: var(--font-display);
+}
+
+.catalogo{
+    margin: 0;
+    color: var(--green);
+    font-size: 12px;
+}
+
+.titulo-tres{
+    font-size: 45px;
+}
+
+.sub-tres{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10rem;
+
+    font-family: var(--font-display);
+    color: var(--slate-400);
+}
+
+/* CONTAINER BIKES */
+
+.container-bikes{
+    display: grid;
+    margin-left: 5rem;
+    grid-template-columns: repeat(4, 1fr);
+
+    
+}
+
+.img-bike{
+    width: 350px;
+    height: 350px;
+}
+
+.card-bike{
+    height: 350px;
+    width: 350px;
+
+    font-family: var(--font-display);
+
 }

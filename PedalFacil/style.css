@@ -367,23 +367,3 @@ span{
 
 /* CONTAINER BIKES */
 
-.container-bikes{
-    display: grid;
-    margin-left: 5rem;
-    grid-template-columns: repeat(4, 1fr);
-
-    
-}
-
-.img-bike{
-    width: 350px;
-    height: 350px;
-}
-
-.card-bike{
-    height: 350px;
-    width: 350px;
-
-    font-family: var(--font-display);
-
-}

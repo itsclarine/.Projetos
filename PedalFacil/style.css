@@ -367,3 +367,89 @@ span{
 
 /* CONTAINER BIKES */
 
+.container-bikes{
+    display: flex;
+    margin-left: 10rem;
+    margin-top: 2rem;
+
+
+    font-family: var(--font-display);
+}
+
+.card-um{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 700px;
+    width: 350px;
+    margin-right: 3rem;
+    box-shadow: ;
+
+    background-color: var(--white);
+}
+
+.card-img{
+    position: relative;
+}
+
+.card-img, .img-um{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-bottom: 2.5rem;
+}
+
+.tipo{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: var(--green);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card-texto{
+    margin-left: 30px;
+    
+}
+
+.categoria{
+    margin: 0;
+    color: var(--green);
+}
+
+.descricao{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+.linha{
+    display: flex;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-bottom: 20px;
+    height: 1px;
+    width: 200px;
+
+    background-color: var(--slate-200);
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.sub-preco{
+    color: var(--slate-500);
+    font-size: 13px;
+
+    margin-left: 0;
+}

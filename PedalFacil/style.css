@@ -400,6 +400,7 @@ span{
     background-color: var(--white);
 }
 
+
 .img-off, .card-texto-off{
     opacity: 0.25;
 }
@@ -565,10 +566,19 @@ small{
     color: var(--green);
 
     margin-top: 2.5rem;
+    margin-left: 4.5rem;
+
+}
+
+.status.available-off{
+    font-weight: 800;
+    font-size: 15px;
+    color: var(--slate-400);
+
+    margin-top: 2.5rem;
     
     margin-left: 4.5rem;
 }
-
 .status.unavailable{
     color: #bac4cc;
 }

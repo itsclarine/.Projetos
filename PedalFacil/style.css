@@ -603,8 +603,18 @@ small{
 }
 
 .btn-primary {
-    background-color: #00a84f;
+    background-color: var(--green);
     color: #ffffff;
+}
+
+.btn-primary-off{
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: var(--font-display);
+    padding: 13px;
+    width: 300px;
 }
 
 .btn-disabled {

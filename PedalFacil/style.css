@@ -383,26 +383,31 @@ span{
     height: 700px;
     width: 350px;
     margin-right: 3rem;
-    box-shadow: ;
+    border-radius: 25px;
 
+    box-shadow: 1px 0 20px -2px rgba(252, 252, 252, 0.548), -1px 0 20px -2px rgba(0, 0, 0, 0.3);
     background-color: var(--white);
+}
+
+.img-off, .card-texto-off{
+    opacity: 0.25;
 }
 
 .card-img{
     position: relative;
 }
 
-.card-img, .img-um{
+.card-img, .img-um, .img-off{
     width: 350px;
     height: 350px;
     object-fit: cover;
 
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.tipo{
+.tipo, .tipo-off{
     position: absolute;
     top: 12px;
     left: 12px;
@@ -412,9 +417,15 @@ span{
     border-radius: 20px;
     font-size: 15px;
     font-weight: bold;
+    
 }
 
-.card-texto{
+.tipo-off{
+    opacity: 1;
+    background-color: var(--slate-900);
+}
+
+.card-texto, .card-texto-off{
     margin-left: 30px;
     
 }
@@ -422,12 +433,20 @@ span{
 .categoria{
     margin: 0;
     color: var(--green);
+
+    font-size: 13px;
+}
+
+.titulo{
+    margin-top: 8px;
 }
 
 .descricao{
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 0;
+
+    font-size: 18px;
 }
 
 .linha{
@@ -450,6 +469,109 @@ span{
 .sub-preco{
     color: var(--slate-500);
     font-size: 13px;
-
+    
     margin-left: 0;
+}
+
+.preco{
+    font-size: 25px;
+    font-weight: 800;
+
+    margin-bottom: 1.5rem;
+}
+
+small{
+    font-size: 15px;
+    color: var(--slate-400);
+}
+
+.botao-bike{
+    display: flex;
+    flex-direction: row;
+}
+
+.botao{
+    width: 200px;
+    height: 40px;
+
+    color: var(--white);
+    background-color: var(--green);
+}
+
+
+
+/* BOTOES IA */
+
+.card {
+    background: var(--white);
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 30px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.label {
+    font-size: 15px;
+    color: #8c9ba5;
+    margin-left: 0;
+    display: block;
+    
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--slate-800);
+
+    margin-top: -10px;
+}
+
+.unit {
+    font-size: 12px;
+    color: #8c9ba5;
+    font-weight: normal;
+}
+
+.status {
+    font-size: 12px;
+    font-weight: 600;
+    }
+
+.status.available {
+    color: #2eab6d;
+}
+
+.status.unavailable {
+    color: #bac4cc;
+}
+
+/* Estilização dos Botões */
+.btn {
+
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #00a84f;
+    color: #ffffff;
+}
+
+.btn-disabled {
+    background-color: #f0f4f7;
+    color: #a0acb5;
+    cursor: not-allowed;
 }

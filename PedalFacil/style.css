@@ -15,12 +15,18 @@
   --font-body: 'Inter', sans-serif;
 }
 
+html{
+    /* TIRAR  SCROLL */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
-/* NAV  */
+/*  NAV  */
 
 nav{
     padding: 15px;
@@ -231,6 +237,10 @@ span{
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+.strong-{
+    font-size: 16px;
+}
+
 .status{
     display: flex;
     flex-direction: row;
@@ -295,6 +305,7 @@ span{
 
 .card-passo:hover{
     transform: scale(1.03);
+    border: 1px solid var(--green-dark);
 }
 
 .lista-card{
@@ -371,7 +382,7 @@ span{
     display: flex;
     margin-left: 10rem;
     margin-top: 2rem;
-
+    
 
     font-family: var(--font-display);
 }
@@ -380,7 +391,7 @@ span{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 700px;
+    height: 740px;
     width: 350px;
     margin-right: 3rem;
     border-radius: 25px;
@@ -490,7 +501,7 @@ small{
     flex-direction: row;
 }
 
-.botao{
+.botao-bike{
     width: 200px;
     height: 40px;
 
@@ -529,7 +540,7 @@ small{
 }
 
 .price {
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
     color: var(--slate-800);
 
@@ -539,30 +550,46 @@ small{
 .unit {
     font-size: 12px;
     color: #8c9ba5;
-    font-weight: normal;
+   
+    margin-left: -2px;
 }
 
 .status {
     font-size: 12px;
     font-weight: 600;
-    }
-
-.status.available {
-    color: #2eab6d;
 }
 
-.status.unavailable {
+.status.available {
+    font-weight: 800;
+    font-size: 15px;
+    color: var(--green);
+
+    margin-top: 2.5rem;
+    
+    margin-left: 4.5rem;
+}
+
+.status.unavailable{
     color: #bac4cc;
 }
 
 /* Estilização dos Botões */
-.btn {
-
+.btn{
     border-radius: 12px;
     border: none;
     font-weight: bold;
     font-size: 14px;
+    font-family: var(--font-display);
+    padding: 13px;
+    width: 300px;
+    
+    transition: transform 0.8s ease; 
     cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.02);
+    
 }
 
 .btn-primary {

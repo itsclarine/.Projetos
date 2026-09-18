@@ -626,14 +626,14 @@ small{
 .alugue-tres{
     display: flex;
     margin-top: 7rem;
-    margin-left: 35rem;
+    margin-left: 34rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
 
     border-radius: 20px;
-    height: 180px;
-    width: 890px;
+    height: 190px;
+    width: 990px;
 
     color: var(--white);
     font-family: var(--font-display);
@@ -649,11 +649,12 @@ small{
 
 .h2-alugue{
     font-size:30px;
+    margin-left: 5rem;
     margin-bottom: -12px;
 }
 
 .p-alugue{
-    margin-left: -4px;
+    margin-left: 4.5rem;
 
     font-size: 16px;
 }
@@ -663,30 +664,38 @@ small{
     border: 1px solid var(--green);
     border-radius: 29px;
     width: 200px;
+    position: absolute;
+
 
     transition: transform 0.8s ease; 
-    box-shadow: 0px 8px 30px rgba(98, 215, 74, 0.79);
     background-color: var(--white)
 }
 
 .btn-alugue:hover{
     transform: scale(1.03);
-    box-shadow: 0px 8px 30px rgba(98, 215, 74, 0.79);
 }
 
 .a-alugue{
     position: absolute;
     font-weight: 800;
     color: var(--green);
+    margin-right: 30px;
+    align-items: center;
+    text-align: center;
+}
 
+.alugue-btn{
+    position: relative
 }
 
 .circulo{
-    position: relative;
-    width: 200px;
-    height: 180px;
+    display: flex;
+    align-items: center;
+    width: 215px;
+    height: 225px;
     border-radius: 50%;
+    margin-top: 2rem;    
 
-    opacity: 0.8;
-    background-color: var(--green-dark);
+    opacity: 0.2;
+    background-color: var(--white);
 }

@@ -628,8 +628,8 @@ small{
     margin-top: 7rem;
     margin-left: 34rem;
     align-items: center;
-    justify-content: space-between;
     flex-direction: row;
+    margin-bottom: 8rem;
 
     border-radius: 20px;
     height: 190px;
@@ -664,8 +664,7 @@ small{
     border: 1px solid var(--green);
     border-radius: 29px;
     width: 200px;
-    position: absolute;
-
+    margin-left: 4rem;
 
     transition: transform 0.8s ease; 
     background-color: var(--white)
@@ -676,26 +675,16 @@ small{
 }
 
 .a-alugue{
-    position: absolute;
+    display: flex;
     font-weight: 800;
     color: var(--green);
-    margin-right: 30px;
     align-items: center;
     text-align: center;
+    
+    margin-left: 15px;
 }
 
 .alugue-btn{
     position: relative
 }
 
-.circulo{
-    display: flex;
-    align-items: center;
-    width: 215px;
-    height: 225px;
-    border-radius: 50%;
-    margin-top: 2rem;    
-
-    opacity: 0.2;
-    background-color: var(--white);
-}

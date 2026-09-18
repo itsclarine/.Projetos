@@ -622,3 +622,71 @@ small{
     color: #a0acb5;
     cursor: not-allowed;
 }
+
+.alugue-tres{
+    display: flex;
+    margin-top: 7rem;
+    margin-left: 35rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    border-radius: 20px;
+    height: 180px;
+    width: 890px;
+
+    color: var(--white);
+    font-family: var(--font-display);
+    background-color: var(--green);
+}
+
+.alugue-texto{
+    display: flex;
+    flex-direction: column;
+    margin-left: -3rem;
+    margin-right: 6rem;
+}
+
+.h2-alugue{
+    font-size:30px;
+    margin-bottom: -12px;
+}
+
+.p-alugue{
+    margin-left: -4px;
+
+    font-size: 16px;
+}
+
+.btn-alugue{
+    padding: 20px;
+    border: 1px solid var(--green);
+    border-radius: 29px;
+    width: 200px;
+
+    transition: transform 0.8s ease; 
+    box-shadow: 0px 8px 30px rgba(98, 215, 74, 0.79);
+    background-color: var(--white)
+}
+
+.btn-alugue:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 8px 30px rgba(98, 215, 74, 0.79);
+}
+
+.a-alugue{
+    position: absolute;
+    font-weight: 800;
+    color: var(--green);
+
+}
+
+.circulo{
+    position: relative;
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;
+
+    opacity: 0.8;
+    background-color: var(--green-dark);
+}

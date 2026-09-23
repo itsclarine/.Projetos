@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <link rel="shortcut icon" href="./src/bicycle.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="../trek/stye.css">
+    <link rel="stylesheet" href="../trek/style.css">
     <title>Formulário</title>
 
 </head>
@@ -54,18 +54,116 @@
                 </div>
 
                 <div class="resumo-valores">
-                    <span class="quantidade-dias">2 dias</span>
-                    <div class="valor-total-topo">R$ 90,00</div>
+                    <span class="quantidade-dias" id="quantidadeDiasTopo">2 dias</span>
+                    <div class="valor-total-topo" id="valorTotalTopo">R$ 90,00</div>
                 </div>
 
             </div>
 
+        
+
+            <form id="formReserva">
+                 
+            <div class="secao-titulo">Dados Pessoais</div>
+            <div class="grid-campos">
+                <div class="campo-grupo col-12">
+                    <label for="nome">Nome completo <span>*</span></label>
+                    <input type="text" id="nome" placeholder="Ex: Maria Silva" required>
+                </div>
+
+
+
+                <div class="campo-grupo col-6">
+                    <label for="telefone">Telefone <span>*</span></label>
+                    <input type="text" id="telefone" placeholder="(11) 99999-0000" required>
+                </div>
+            </div>
+                
+
+
+            <div class="secao-titulo">Endereço Completo</div>
+                <div class="grid-campos">
+                <div class="campo-grupo col-4">
+                    <label for="cep">CEP <span>*</span></label>
+                    <input type="text" id="cep" placeholder="00000-000" required>
+                </div>
+
+
+
+                <div class="campo-grupo col-8">
+                    <label for="logradouro">Logradouro <span>*</span></label>
+                    <input type="text" id="logradouro" placeholder="Rua, Avenida, etc." required>
+                </div>
+
+
+
+                <div class="campo-grupo col-3">
+                    <label for="numero">Número <span>*</span></label>
+                    <input type="text" id="numero" placeholder="123" required>
+                </div>
+
+
+
+                <div class="campo-grupo col-4">
+                    <label for="bairro">Bairro <span>*</span></label>
+                    <input type="text" id="bairro" placeholder="Nome do bairro" required>
+                </div>
+
+
+
+                <div class="campo-grupo col-3">
+                    <label for="cidade">Cidade <span>*</span></label>
+                    <input type="text" id="cidade" placeholder="São Paulo" required>
+                </div>
+
+
+
+                <div class="campo-grupo col-2">
+                    <label for="uf">UF <span>*</span></label>
+                    <input type="text" id="uf" placeholder="SP" maxlength="2" required>
+                </div>
+
+            </div>
+                    
+                    <!-- Seção Período do Empréstimo -->
+            <div class="secao-titulo">Período do Empréstimo</div>
+                <div class="grid-campos">
+                <div class="campo-grupo col-5">
+                    <label for="dataRetirada">Data de retirada <span>*</span></label>
+                    <input type="date" id="dataRetirada" required>
+                </div>
+
+
+                <div class="campo-grupo col-2">
+                    <label for="horarioRetirada">Horário de retirada <span>*</span></label>
+                    <input type="time" id="horarioRetirada" required>
+                </div>
+
+
+                <div class="campo-grupo col-5">
+                    <label for="dataDevolucao">Data de devolução <span>*</span></label>
+                    <input type="date" id="dataDevolucao" required>
+                </div>
+
+            </div>
+                    
+            <div class="card-total-final">
+                <div class="detalhes-calculo-texto">
+                    <span id="calculoDiasTexto">2 dias × R$ 45,00</span>
+                    <span class="subtexto-pagamento">Pagamento na retirada</span>
+                 </div>
+                <div class="valor-final-destaque" id="valorFinalDestaque">R$ 90,00</div>
+
+            </div>
+
+                    
+            <button type="submit" class="btn-confirmar">Confirmar reserva</button>
+
+            </form>
         </div>
-
-
-
     </main>
 
+    <script src="script.js"></script>
 
 </body>
 </html>

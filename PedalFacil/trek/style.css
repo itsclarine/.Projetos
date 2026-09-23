@@ -1,0 +1,298 @@
+:root{
+    --green: #16a34a;
+    --green-dark: #15803d;
+    --green-light: #dcfce7;
+    --green-pale: #f0fdf4;
+    --slate-900: #0f172a;
+    --slate-700: #334155;
+    --slate-500: #64748b;
+    --slate-400: #94a3b8;
+    --slate-200: #e2e8f0;
+    --slate-100: #f1f5f9;
+    --white: #ffffff;
+    --bg: #f8fafc;
+    --font-display: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+html{
+    /* TIRAR  SCROLL */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*  NAV  */
+
+nav{
+    padding: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--slate-200);
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    font-family: var(--font-display);
+    font-size: 18px;
+    list-style-type: none;
+}
+
+.nome{
+    font-weight: 800;
+}
+
+.facil{
+    color: var(--green);
+}
+
+.container-forms{
+    margin-top: 40px;
+    margin-left: 30rem;
+}
+
+.container-titulo{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+
+}
+
+.card{
+    display: flex;
+    gap: 300px;
+    width: 700px;
+    height: 180px;
+
+    margin-top: 4rem;
+    margin-left: 3rem;
+    justify-content: center;
+
+    border-radius: 40px;
+    background-color: var(--bg);
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.137);;
+}
+
+.p-forms{
+    font-family: var(--font-display);
+    font-size: 15px;
+    color: var(--green);
+}
+
+.h1-forms{
+    font-family: var(--font-display);
+    
+    margin-top: 10px;
+}
+
+.produto-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.produto-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: var(--slate-100);
+    
+}
+
+.produto-textos {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.categoria-tag {
+    color: var(--green);
+    font-family: var(--font-display);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.produto-nome {
+    color: var(--slate-900);
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.produto-preco-diaria {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--green);
+    font-weight: 500;
+}
+
+/* --- LADO DIREITO: VALORES --- */
+.resumo-valores {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+
+    
+}
+
+.quantidade-dias {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--slate-400);
+}
+
+.valor-total-topo {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--slate-900);
+    line-height: 1;
+
+}
+
+/* 1. Centraliza o formulário inteiro na tela e limita a largura */
+
+
+#formReserva {
+    max-width: 780px;       /* Evita que os campos fiquem muito esticados como na imagem */
+    margin-top: 4rem; 
+    margin-bottom: 4rem;
+    padding: 30px;
+    background-color: var(--bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    font-family: sans-serif; /* Ajuste para a fonte do seu projeto */
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.137);;
+
+    }
+
+/* 2. Dá mais destaque e espaçamento para os títulos das seções */
+.secao-titulo {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #777;
+    margin-top: 30px;       /* Espaço antes de começar uma nova seção */
+    margin-bottom: 15px;    /* Espaço entre o título e os campos */
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+.secao-titulo:first-of-type {
+  margin-top: 0;          /* Remove o espaço extra do primeiro título */
+}
+
+/* 3. Cria a Grid de Campos com espaçamentos corrigidos */
+.grid-campos {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* Sistema de 12 colunas */
+  gap: 20px 15px;                         /* Espaçamento vertical e horizontal entre os campos */
+  margin-bottom: 25px;
+}
+
+/* Classes utilitárias baseadas no seu HTML */
+.col-12 { grid-column: span 12; }
+.col-8  { grid-column: span 8; }
+.col-6  { grid-column: span 6; }
+.col-5  { grid-column: span 5; }
+.col-4  { grid-column: span 4; }
+.col-3  { grid-column: span 3; }
+.col-2  { grid-column: span 2; }
+
+/* 4. Estilização e espaçamento interno dos inputs */
+.campo-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;                             
+}
+
+.campo-grupo label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+.campo-grupo label span {
+  color: #e74c3c;                         
+}
+
+.campo-grupo input {
+  width: 100%;
+  padding: 12px;                          /* Aumenta a área de clique interna do input */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;                 /* Garante que o padding não quebre a largura */
+  transition: border-color 0.2s;
+}
+
+.campo-grupo input:focus {
+  border-color: #27ae60;                  /* Cor de destaque verde ao focar */
+  outline: none;
+}
+
+/* 5. Ajuste do Card de Preço Inferior */
+.card-total-final {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ebf7ee;              /* Tom de verde suave de fundo */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+.detalhes-calculo-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#calculoDiasTexto {
+  font-weight: bold;
+  color: #27ae60;
+  font-size: 16px;
+}
+
+.subtexto-pagamento {
+  font-size: 12px;
+  color: #777;
+}
+
+.valor-final-destaque {
+  font-size: 24px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+/* 6. Botão de Confirmar Ajustado */
+.btn-confirmar {
+  width: 100%;
+  padding: 15px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-confirmar:hover {
+  background-color: #219653;
+}

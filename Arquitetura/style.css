@@ -25,6 +25,7 @@
     width: 100%;
     z-index: 1000;
 
+    padding: 20px;
     justify-content: space-between;
     font-family: var(--fonte-principal);
     margin-left: 5rem;
@@ -42,11 +43,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+    gap: 3px;
+
 }
 
 .logo{
-    width: 45px;
+    width: 35px;
     height: auto;
 
     margin-right: 10px;
@@ -54,7 +56,50 @@
 
 .links{
     display: flex;
+    gap: 2rem;
     align-items: center;
-    
 
+    margin-right: 10rem;
+    margin-top: 12px;
+
+    border: 1px solid var(--cinza);
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+.links, a{
+    color: var(--cinza);
+    text-decoration: none;
+}
+
+.links, a:hover{
+    color: var(--preto);
+}
+
+/* -- PARTE UM -- */
+
+.parte-um{
+    display: flex;
+
+    font-size: 22px;
+    font-family: var(--fonte-principal);
+    margin-top: 13rem;
+    margin-left: 5rem;
+}
+
+.span-um{
+    font-family: var(--fonte-titulo);
+    color: var(--marrom);
+    font-style: italic;
+}
+
+.sub-um{
+    font-size: 18px;
+    font-family: var(--fonte-titulo);
+    color: var(--marrom);
+    font-weight: 800;
+
+    margin-top: 1.5rem;
+    margin-left: 10px;
 }

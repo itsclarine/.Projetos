@@ -122,8 +122,10 @@
 .sub-um{
     font-size: 19px;
     font-family: var(--fonte-titulo);
-    color: var(--bege);
+    color: var(--branco);
     font-weight: 800;
+    font-style: italic;
+
 
     margin-top: 1rem;
     margin-left: 10px;

@@ -2,13 +2,31 @@
 
 
 :root {
+    /* --- Tons Principais & Terra (Arquitetura & Aconchego) --- */
     --marrom: #806B5B;
     --marrom-forte: #635246;
+    --marrom-claro: #A38F7F;
+    
+    /* --- Tons Neutros & Fundos --- */
     --bege: #E8DFD5;
+    --bege-claro: #F5F1EB;
+    --bege-escuro: #D2C5B6;
+    
     --branco: #FFFFFF;
     --preto: #292724;
+    --preto-suave: #1A1917;
+    
     --cinza: #77736F;
+    --cinza-claro: #E0DDD9;
+    --cinza-escuro: #4A4643;
 
+    /* --- Cores Vivas & Acentos (Destaques & CTA) --- */
+    --terracota-vivo: #D9532F;  /* Laranja/terracota vibrante (energia e calor) */
+    --verde-folha: #2D6A4F;     /* Verde botânico (paisagismo e sustentabilidade) */
+    --azul-oceano: #1D5C8A;     /* Azul profundo/marinho (sofisticação e modernidade) */
+    --amarelo-mostarda: #E3A018; /* Dourado/mostarda quente (detalhes metálicos/iluminação) */
+
+    /* --- Tipografia --- */
     --fonte-principal: 'Inter', sans-serif;
     --fonte-titulo: 'Playfair Display', serif;
 }
@@ -76,7 +94,7 @@
 }
 
 .links, a:hover{
-    color: var(--preto);
+    color: var(--terracota-vivo);
 }
 
 /* -- PARTE UM -- */
@@ -99,7 +117,10 @@
     display: block;
 
     border-radius: 7%;
+
+    filter: brightness(0.9); /* Valores abaixo de 1 escurecem a imagem (0.5 = 50% de brilho) */
 }
+
 
 .titulo-um{
     position: absolute;
@@ -115,8 +136,10 @@
 
 .span-um{
     font-family: var(--fonte-titulo);
-    color: var(--bege);
+    color: var(--terracota-vivo);
     font-style: italic;
+
+    background-color: var(--bege);
 }
 
 .sub-um{
@@ -132,6 +155,5 @@
 }
 
 .botao-um{
-    margin-left: 1rem;
-    margin-top: 3rem;
+    margin-top: 8rem;
 }

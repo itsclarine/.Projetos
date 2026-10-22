@@ -119,6 +119,8 @@
 
     border-radius: 7%;
 
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
     filter: brightness(0.9); /* Valores abaixo de 1 escurecem a imagem (0.5 = 50% de brilho) */
 }
 
@@ -155,18 +157,105 @@
     margin-left: 10px;
 }
 
-.link-saiba{
-    margin-top: 2rem;
-    margin-left: 20px;
-    width: 150px;
-    height: 35px;
-    border: 1px solid var(--terracota-vivo);
-    border-radius: 30px;
-    font-weight: 800;
+.botao-saiba{
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    padding: 10px;
+    width: 200px;
 
-    background-color: var(--bege);
-    color: var(--terracota-vivo);
+    border: 1px solid var(--bege);
+    border-radius: 8px;
 
-    font-size: 14px;
+    background-color: transparent;
+    color: var(--branco);
+
+    font-style: italic;
+    font-size: 15px;
     font-family: var(--fonte-titulo);
+    font-weight: 800;
+    
+    transition: transform 0.8s ease, box-shadow 0.2s ease;
 }
+
+.botao-saiba:hover{
+    cursor: pointer;
+
+    color: var(--branco);
+    background-color: var(--terracota-vivo);
+    transform: scale(1.09);
+}
+
+/* == PARTE DOIS ==*/
+
+.sobreNos-dois{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    font-size: 20px;
+
+    font-family: var(--fonte-titulo);
+    color: var(--terracota-vivo);
+    opacity: 70%;
+}
+
+.p-dois{
+    font-family: var(--fonte-titulo);
+    font-style: italic;
+    color: var(--preto-suave);
+    font-size: 18px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    margin-left: 13rem;
+    margin-right: 13rem;
+    margin-bottom: 6rem;
+
+    gap: 15px;
+   height: 120px;
+
+}
+
+.card{
+    background-color: transparent;
+    border: 1px solid var(--azul-oceano);
+    border-radius: 13px;
+
+    transition: transform 0.8s ease, box-shadow 0.2s ease;
+
+}
+
+.card:hover{
+    cursor: pointer;
+    border-color: var(--terracota-vivo);
+}
+
+.nome-card{
+    font-family: var(--fonte-principal);
+    margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.p-card{
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.img-card{
+    display: flex;
+
+    margin-left: 5px;
+    margin-top: 5px;
+
+    width: 28px;
+    height: 28px;
+}
+
+/* */

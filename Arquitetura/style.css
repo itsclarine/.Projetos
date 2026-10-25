@@ -187,18 +187,32 @@
 
 /* == PARTE DOIS ==*/
 
+.parte-dois{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    margin-bottom: 15rem;
+    align-items: center;
+}
+
 .sobreNos-dois{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
     flex-direction: column;
-    margin-top: 10rem;
-    margin-bottom: 5rem;
-    font-size: 20px;
 
+    margin-left: 9rem;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+
+    font-size: 25px;
     font-family: var(--fonte-titulo);
+    opacity: 100%;
+}
+
+.quemsomos{
     color: var(--terracota-vivo);
-    opacity: 70%;
+
+    margin-bottom: 10px;
 }
 
 .p-dois{
@@ -206,56 +220,57 @@
     font-style: italic;
     color: var(--preto-suave);
     font-size: 18px;
+
+    margin-top: 10px;
 }
 
-.cards{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+/* == numeros == */
 
-    margin-left: 13rem;
-    margin-right: 13rem;
-    margin-bottom: 6rem;
-
-    gap: 15px;
-   height: 120px;
-
-}
-
-.card{
-    background-color: transparent;
-    border: 1px solid var(--azul-oceano);
-    border-radius: 13px;
-
-    transition: transform 0.8s ease, box-shadow 0.2s ease;
-
-}
-
-.card:hover{
-    cursor: pointer;
-    border-color: var(--terracota-vivo);
-}
-
-.nome-card{
-    font-family: var(--fonte-principal);
-    margin-left: 10px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.p-card{
-    font-family: var(--fonte-principal);
-    font-size: 15px;
-    margin-left: 10px;
-}
-
-.img-card{
+.numeros-{
     display: flex;
 
-    margin-left: 5px;
-    margin-top: 5px;
+    margin-top: 45px;
+    margin-left: 17rem;
 
-    width: 28px;
-    height: 28px;
 }
 
-/* */
+.lista1, .lista2{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 12px;
+
+    font-family: var(--fonte-principal);
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.lista1{
+    margin-right: 3rem;
+
+}
+
+.desc{
+    font-size: 15px;
+
+    color: var(--marrom-forte);
+    font-style: italic;
+}
+
+.sup{
+    vertical-align: super;
+    font-size: 17px; 
+    line-height: 0;
+}
+
+/* == parte tres - projetos == */
+
+.parte-tres{
+    display: flex;
+
+    font-size: 23px;
+    font-family: var(--fonte-titulo);
+    color: var(--terracota-vivo);
+
+    margin-left: 9rem;
+}

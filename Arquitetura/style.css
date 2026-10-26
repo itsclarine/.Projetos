@@ -267,10 +267,37 @@
 
 .parte-tres{
     display: flex;
+    flex-direction: column;
 
     font-size: 23px;
     font-family: var(--fonte-titulo);
     color: var(--terracota-vivo);
 
     margin-left: 9rem;
+    margin-top: -3rem;
+}
+
+.lista-projetos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    
+    margin-left: 8rem;
+    margin-top: 20px;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+
+    list-style-type: none;
+
+}
+
+.img-lista{
+    width: 300px;
+    height: 320px;
+
+    border-radius: 30px;
+}
+
+.lista-link{
+    text-decoration: none;
 }

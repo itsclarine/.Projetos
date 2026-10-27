@@ -174,7 +174,7 @@
     font-family: var(--fonte-titulo);
     font-weight: 800;
     
-    transition: transform 0.8s ease, box-shadow 0.2s ease;
+    transition: transform 0.5s ease, box-shadow 0.2s ease;
 }
 
 .botao-saiba:hover{

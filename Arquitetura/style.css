@@ -191,6 +191,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     
+    
     margin-bottom: 15rem;
     align-items: center;
 }
@@ -292,8 +293,9 @@
 }
 
 .img-lista{
-    width: 300px;
-    height: 320px;
+    width: 400px;
+    height: 420px;
+
 
     border-radius: 30px;
 }

@@ -268,7 +268,7 @@
 
 .parte-tres{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
     font-size: 23px;
     font-family: var(--fonte-titulo);
@@ -278,28 +278,104 @@
     margin-top: -3rem;
 }
 
-.lista-projetos{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
+/* == cards */
+
+.container-cards{
+    display: flex;
+    margin-left: 10rem;
+    margin-top: 2rem;
     
-    margin-left: 8rem;
-    margin-top: 20px;
+
     font-family: var(--fonte-principal);
-    font-size: 14px;
-
-    list-style-type: none;
-
 }
 
-.img-lista{
-    width: 400px;
-    height: 420px;
+.card-um{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 740px;
+    width: 350px;
+    margin-right: 3rem;
+    border-radius: 25px;
 
-
-    border-radius: 30px;
+    box-shadow: 1px 0 20px -2px rgba(252, 252, 252, 0.548), -1px 0 20px -2px rgba(0, 0, 0, 0.3);
+    background-color: var(--branco);
 }
 
-.lista-link{
-    text-decoration: none;
+
+.img-off, .card-texto-off{
+    opacity: 0.25;
 }
+
+.card-img{
+    position: relative;
+}
+
+.card-img, .img-um, .img-off{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-bottom: 1.5rem;
+}
+
+.tipo, .tipo-off{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: var(--verde-folha);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+
+.card-texto{
+    margin-left: 30px;
+    
+}
+
+.categoria{
+    margin: 0;
+    color: var(--verde-folha);
+
+    font-size: 15px;
+    font-family: var(--fonte-principal);
+    font-weight: 800;
+}
+
+.titulo{
+    margin-top: 8px;
+
+    color: var(--cinza-escuro);
+}
+
+.descricao{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+
+    color: var(--cinza);
+    font-size: 16px;
+    
+}
+
+
+.botao-bike{
+    display: flex;
+    flex-direction: row;
+}
+
+.botao-bike{
+    width: 200px;
+    height: 40px;
+
+    color: var(--white);
+    background-color: var(--green);
+}
+

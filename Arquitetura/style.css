@@ -293,7 +293,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 740px;
+    height: 640px;
     width: 350px;
     margin-right: 3rem;
     border-radius: 25px;
@@ -316,8 +316,8 @@
     height: 350px;
     object-fit: cover;
 
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
     margin-bottom: 1.5rem;
 }
 
@@ -325,10 +325,14 @@
     position: absolute;
     top: 12px;
     left: 12px;
+
     background-color: var(--verde-folha);
     color: white;
+
     padding: 4px 12px;
     border-radius: 20px;
+
+    font-family: var(--fonte-principal);
     font-size: 15px;
     font-weight: bold;
     
@@ -378,4 +382,3 @@
     color: var(--white);
     background-color: var(--green);
 }
-
